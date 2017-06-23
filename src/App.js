@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Tab1 from './Tab1';
 import Tab2 from './Tab2';
-import Tab3 from './Tab3'
+import Tab3Lazy from './Tab3Lazy'
 
 class App extends Component {
   constructor(props) {
@@ -31,7 +31,7 @@ class App extends Component {
         
         { selectedTab === 1 && <Tab1 /> }
         { selectedTab === 2 && <Tab2 /> }
-        { selectedTab === 3 && <Tab3 /> }
+        { selectedTab === 3 && <Tab3Lazy /> }
       </div>
     );
   }
