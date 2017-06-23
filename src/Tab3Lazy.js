@@ -1,9 +1,10 @@
 import React from 'react';
 import Loadable from 'react-loadable';
 import Loading from './Loading';
+import fakeDelay from './fakeDelay';
 
 let Tab3 = Loadable({
-  loader: () => import('./Tab3'),
+  loader: () => fakeDelay(2000).then(() => import('./Tab3')),
   loading: Loading
 });
 
