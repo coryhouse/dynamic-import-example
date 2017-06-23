@@ -6,7 +6,7 @@ There are two different approaches shown.
 
 Tab2 dynamically imports a heavy dependency using dynamic imports.
 
-Tab3 dynamically imports a heavy React component using [react-loadable](https://github.com/thejameskyle/react-loadable).
+Tab3 dynamically imports a heavy React component using [react-loadable](https://github.com/thejameskyle/react-loadable) which uses dynamic imports behind the scenes.
 
 ## Quick Start
 ```
