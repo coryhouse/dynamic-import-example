@@ -2,6 +2,7 @@ import React from 'react';
 
 export default class Tab2 extends React.Component {
   componentDidMount() {
+    // webpack treats import() as a split-point and puts the requested module in a separate chunk. 
     import('moment')
         .then(moment => moment().format('LLLL'))
         .then(str => console.log(str))
@@ -9,12 +10,12 @@ export default class Tab2 extends React.Component {
   }
 
   render() {
-      return (
-        <ul>
-            <li>I just dynamically loaded moment using a dynamic import.</li>
-            <li>Check the network tab to see this component's bundle requested dynamically on click.</li>
-            <li>Check the console to see moment's output.</li>
-        </ul>
-      )
+    return (
+      <ul>
+        <li>I just dynamically loaded moment using a dynamic import.</li>
+        <li>Check the network tab to see this component's bundle requested dynamically on click.</li>
+        <li>Check the console to see moment's output.</li>
+      </ul>
+    )
   }
 }
