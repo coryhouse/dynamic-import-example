@@ -24,7 +24,7 @@ class App extends Component {
       <div className="App">
         <p>
           This app uses ES dynamic import support and Webpack to dynamically
-          import a large bundle in componentDidMount.
+          import assets.
         </p>
 
         <a href="" onClick={e => this.showTab(e, 1)}>Tab 1</a> | <a href="" onClick={e => this.showTab(e, 2)}>Tab 2</a> | <a href="" onClick={e => this.showTab(e, 3)}>Tab 3</a>
