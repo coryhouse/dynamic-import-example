@@ -4,6 +4,7 @@ import Loading from './Loading';
 import fakeDelay from './fakeDelay';
 
 let Tab3 = Loadable({
+  // Adding fakeDelay below just so you can see the loading message display.
   loader: () => fakeDelay(2000).then(() => import('./Tab3')),
   loading: Loading
 });
