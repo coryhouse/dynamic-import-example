@@ -4,7 +4,7 @@ This demo shows how to use [ES dynamic imports with webpack](https://webpack.js.
 
 There are two different approaches shown.
 
-Tab2 dynamically imports a heavy dependency using dynamic imports.
+Tab2 dynamically imports a heavy dependency using dynamic imports and [Webpack's Magic comments](https://webpack.js.org/guides/code-splitting-async/#chunk-names).
 
 Tab3 dynamically imports a heavy React component using [react-loadable](https://github.com/thejameskyle/react-loadable) which uses dynamic imports behind the scenes.
 
